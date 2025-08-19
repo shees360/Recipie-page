@@ -1,0 +1,187 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Page</title>
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+    <style>
+        @font-face {
+            font-family: 'Outfit';
+            src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+        }
+        @font-face {
+            font-family: 'Young Serif';
+            src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+        }
+        body{
+            background-color:  rgb(243, 230, 216);
+            box-sizing: border-box;
+            margin: 0;
+            display: flex;
+            height: 100vh;
+        }
+        .container{
+            background-color: white;
+            width: min(32rem, 100%);
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            border-radius: 10px;
+            padding: 30px;
+        }
+        .con-img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        img{
+            width: min(100%, 100%);
+            height: 100%;
+        }
+        h1{
+            font-family: 'Young Serif', sans-serif;
+            margin-bottom: 0;
+            color: rgb(48, 45, 44);
+            font-weight: 400;
+            font-size: 30px;
+        }
+        .intro{
+            font-family: 'Outfit', sans-serif;
+            color: rgb(95, 87, 78);
+            font-size: 12.5px;
+        }
+        .preparation{
+            background-color:  rgb(255, 245, 250);
+            border-radius: 7px;
+            margin-bottom: 0;
+        }
+        h3{
+            font-family: 'Outfit', sans-serif;
+            padding-left: 22px;
+            padding-right: 22px;
+            color: rgb(123, 40, 79);
+            font-size: 17px;
+            font-weight: 200px;
+            margin-bottom: 0;
+        }
+        li{
+            font-family: 'Outfit', sans-serif;
+            color: rgb(95, 87, 78);
+            font-size: 12.5px;
+            margin: 6;
+            margin-top: 5;
+            margin-bottom: 0;
+        }
+        .red::marker{
+            color: rgb(123, 40, 79);
+        }
+        h2{
+            font-family: 'Young Serif', sans-serif;
+            margin-bottom: 0;
+            color: rgb(133, 70, 50);
+            font-size: 23px;
+            font-weight: 200;
+        }
+        .brown{
+            padding-left: 15px;
+        }
+        .brown::marker{
+            color: rgb(133, 70, 50);
+            font-weight: 600;
+            padding: 10px;
+        }
+        .ul{
+            margin-left: -20px;
+        }
+        hr{
+            width: 100%;
+            border: 0.01px solid rgb(243, 240, 238);
+            margin-bottom: 0;
+        }
+        .nutrition{
+            font-family: 'Outfit', sans-serif;
+            font-size: 12px;
+            color: rgb(95, 87, 78);
+        }
+        table{
+            color: rgb(95, 87, 78);
+            font-family: 'Outfit', sans-serif;
+            font-size: 12px;
+        }
+        .num{
+            color: rgb(133, 70, 50);
+            font-weight: 800;
+        }
+        td{
+           padding-bottom: 10px;
+           border-bottom: 0.01px solid rgb(243, 240, 238);
+        }
+        #border{
+            border-bottom: none;
+        }
+        #bor{
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="con-img">
+            <img src="assets/images/image-omelette.jpeg" alt="">
+        </div>
+        <h1>Simple Omelette Recipie</h1>
+        <p class="intro"> 
+             An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+        </p>
+        <div class="preparation">
+        <h3>Preparation Time</h3>
+        <ul>
+            <li class="red"><b>Total:</b> Approximately 10 minutes</li>
+            <li class="red"><b>Preparation:</b> 5 minutes</li>
+            <li class="red"><b>Cooking:</b> 5 minutes</li>
+        </ul>
+        </div>
+        <h2>Ingredients</h2>
+        <ul class="ul">
+            <li class="brown">2-3 large eggs</li>
+            <li class="brown">Salt, to taste</li>
+            <li class="brown">Pepper, to taste</li>
+            <li class="brown">1 tablespoon of butter or oil</li>
+            <li class="brown">Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+        </ul>
+        <hr>
+        <h2>Instuctions</h2>
+        <ol class="ul">
+            <li class="brown"><b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed.You can add a tablespoon of water or milk for a fluffier texture.</li>
+            <li class="brown"><b>Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+            <li class="brown"><b>Cook the omelette:</b> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</li>
+            <li class="brown"><b>Add fillings (optional):</b> When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</li>
+            <li class="brown"><b>Fold and serve:</b> As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</li>
+            <li class="brown"><b>Enjoy:</b> Serve hot, with additional salt and pepper if needed.</li>
+        </ol>
+        <hr>
+        <h2>Nutrition</h2>
+        <p class="nutrition">The table below shows nutritional values per serving without the additional fillings.</p>
+        <table>
+            <tr>
+                <td>Calories</td>
+                <td class="num">277kcal</td>
+            </tr>
+            <tr>
+                <td>Carbs</td>
+                <td class="num">0g</td>
+            </tr>
+            <tr>
+                <td>Protein</td>
+                <td class="num">20g</td>
+            </tr>
+            <tr>
+                <td id="border">Fat</td>
+                <td class="num" id="bor">22g</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
